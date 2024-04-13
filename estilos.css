@@ -7,7 +7,7 @@
 
 .botonera {
     width: 100%;
-    height: 40px;
+    height: 40px; /*Este tipo de cosas en vez de solucionarlo con una altura fija, intenta usando padding o margin. Porque suele pasar que en tu pantalla se ve bien, pero en otras de distinta resolución no*/
     background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
@@ -47,6 +47,7 @@ nav ul li {
 .comienzo {
     width: 100%;
     height: 616px;
+        /*Acá también en vez de usar alturas fijas estaría bueno solucionarlo de otra forma. Pero en estos casos donde las medidas son más grandes que 100px, por ejemplo, en vez de solucionar con padding podes cambiar de usar pixeles a usar la medida vh. Esta medida vendría a ser la altura del dispositivo, como un porcentaje de la pantalla, entonces varía según la resolución de cada compu o celu.*/
     background-color: rgb(192, 174, 209);
     margin: 0;
     padding: 30px 0px;
