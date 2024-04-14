@@ -8,6 +8,7 @@
     list-style: none;
 }
 
+
 @font-face {
     font-family: "Museo-Moderno";
     src: url("fonts/MuseoModerno-VariableFont_wght.ttf"); format:('truetype');
@@ -43,7 +44,7 @@
 
 .logo:hover {
     color: violet;
-    text-shadow: 0 0 25px violet,
+    text-shadow: 0 0 25px white,
                  0 0 25px violet;
     transform: scale(1.1);
 }
@@ -63,7 +64,7 @@ span {
 }
 
 .navbar a:hover,
-.navbar a.active {
+.navbar a.activado {
     color: violet;
     border-bottom: 3px solid violet;
 }
@@ -71,47 +72,77 @@ span {
 /*---espacio----*/
 #inicio {
     width: 100%;
-    height: 616px;
-    background-color: rgb(192, 174, 209);
-    margin: 0;
-    padding: 30px 0px;
+    min-height: 100vh;
+    background: rgb(241, 241, 241);
     display: flex;
-    justify-content: center;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12%;
 }
 
-.titulo h1 {
-    padding: 40px 20px;
+.inicio-contenido {
+    max-width: 800px;
     font-family: "Museo-Moderno", "sans-serif";
-    font-size: 100px;
 }
 
-.introduccion p {
-    padding: 20px;
+.inicio-contenido h3 {
+    font-size: 42px;
+}
+
+.inicio-contenido h1 {
+    font-size: 46px;
+}
+
+span {
+    color: blueviolet;
+}
+
+.inicio-contenido p {
+    font-size: 18px;
+    margin: 25px 0px 30px;
     font-family: "Roboto", "sans-serif";
-    font-size: 20px;
 }
 
 .foto {
-    align-self: self-start;
-    padding: 20px;
+    border-radius: 50%;
+    width: 550px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: blueviolet;
+}
+::-webkit-scrollbar-track {
+    background-color: rgb(0, 0, 0, 0.6);
+    width: 50px;
 }
 
 #presentacion {
-    width: 100%;
-    height: 630px;
-    background-color:rgb(176, 231, 231);
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: rgb(241, 241, 241);
 }
 
-.a h2 {
-    padding: 20px;
-    font-size: 40px;
+.presentacion-contenido h2 {
+    font-family: "Museo-Moderno", "sans-serif";
+    text-align: left;
+    color: blueviolet;
+    font-size: 63px;
 }
 
-.b p {
-    padding: 20px;
+.presentacion-contenido h3 {
+    font-size: 32px;
+    font-family: "Roboto", "sans-serif";
+}
+.presentacion-contenido p {
     font-size: 20px;
+    margin: 2em 0 3em;
+    font-family: "Roboto", "sans-serif";
 }
 
 #experiencia {
