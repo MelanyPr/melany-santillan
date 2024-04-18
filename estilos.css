@@ -136,6 +136,7 @@ span {
 }
 
 .presentacion-contenido h3 {
+    color: blueviolet;
     font-size: 32px;
     font-family: "Roboto", "sans-serif";
 }
@@ -146,13 +147,28 @@ span {
 }
 
 #experiencia {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 12% 8%;
-        gap: 10em;
-        background: rgb(241, 241, 241);
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: rgb(241, 241, 241);
+}
+
+.experiencia-contenido h2 {
+    font-family: "Museo-Moderno", "sans-serif";
+    color: blueviolet;
+    font-size: 45px;
+}
+.experiencia-contenido h3 {
+    font-family: "Roboto", "sans-serif";
+    color:blueviolet;
+    font-size: 27px;
+}
+.experiencia-contenido p {
+    font-family: "Roboto", "sans-serif";
+    font-size: 16px;
+}
 
 
 #habilidades {
@@ -162,7 +178,49 @@ span {
 }
 
 #contacto {
+    padding: 100px 15px;
+}
+#contacto .titulo-seccion {
+    margin-bottom: 20px;
+    font-family: "Museo-Moderno", "sans-serif";
+    color: blueviolet;
+    font-size: 30px;
+    cursor:default;
+}
+#contacto .contenedor-form {
+    max-width: 1100px;
+    margin: auto;
+}
+#contacto .contenedor-form .fila {
+    margin-bottom: 15px;
+}
+#contacto .fila-mitad {
+    margin-bottom: 15px;
+}
+
+#contacto .contenedor-form input,
+#contacto .contenedor-form textarea {
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #919191;
+}
+
+#contacto .contenedor-form .mitad input {
+    width: 48%;
+}
+#contacto .contenedor-form .input-full {
     width: 100%;
-    height: 597px;
-    background-color: darkkhaki;
+}
+#contacto .btn-enviar {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+#contacto .btn-enviar:hover {
+    background-color: blueviolet;
+    color: white;
 }
