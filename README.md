@@ -1,4 +1,4 @@
-# Curriculum Vitae Tp1
+# TP1 Curriculum - Entrega Final
 ## Realizado en html y css
 ## Tamaño de pantalla: 1366x768
 ## Editor de código: Visual Studio Code
