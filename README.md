@@ -1,5 +1,7 @@
 # Curriculum Vitae Tp1
-## Realizado en html y css. Tamaño de pantalla: 1366x768. Editor de código: Visual Studio Code
+## Realizado en html y css. 
+## Tamaño de pantalla: 1366x768. 
+## Editor de código: Visual Studio Code
   Este trabajo lo encare de una forma muy basica representando un curriculum que ya tenia armado pero que estaba en un formato a4. Despues de investigar y buscar inspiraciones arme mi boceto de como queria que sea, la idea era seguir respetando lo basico, con grandes espacios en blanco y pocos colores. 
 
   Aclaraciones:
