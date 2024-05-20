@@ -232,9 +232,11 @@ span {
 }
 
 #contacto {
-    padding: 100px 15px;
+    width: 100%;
+    height: auto;
     background: rgb(241, 241, 241);
 }
+
 #contacto .titulo-seccion {
     margin-bottom: 20px;
     font-family: "Museo-Moderno", "sans-serif";
@@ -242,15 +244,10 @@ span {
     font-size: 30px;
     cursor:default;
 }
+
 #contacto .contenedor-form {
     max-width: 1100px;
     margin: auto;
-}
-#contacto .contenedor-form .fila {
-    margin-bottom: 15px;
-}
-#contacto .fila-mitad {
-    margin-bottom: 15px;
 }
 
 #contacto .contenedor-form input,
@@ -261,24 +258,7 @@ span {
     border: 1px solid #919191;
 }
 
-#contacto .contenedor-form .mitad input {
-    width: 48%;
-}
-#contacto .contenedor-form .input-full {
-    width: 100%;
-}
-#contacto .btn-enviar {
-    display: block;
-    margin: auto;
-    cursor: pointer;
-    transition: .5s;
-    padding: 10px 15px;
-    font-size: 18px;
-}
-#contacto .btn-enviar:hover {
-    background-color: blueviolet;
-    color: white;
-}
+
 
 footer {
     background: rgba(0, 0, 0, 0.877);

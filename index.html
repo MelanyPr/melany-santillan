@@ -51,72 +51,90 @@
                 <div class="columna-izquierda">
                     <article class="experiencia-contenido">
                         <h2>Experiencia Laboral</h2>
+                        <ul>
                             <li>
-                            <h3>YPF Servi compras</h3>
-                            <p>Atención al cliente, cajera, etc.</p>
-                            <p>Diciembre 2023-Acualmente</p>
-                        </li>
-                    
-                        <li>
-                            <h3>Hospital Eukeria Ezeiza</h3>
-                            <p>Voluntaria en cuidado de pacientes</p>
-                            <p>Marzo 2023-Diciembre 2023</p>
-                        </li>
+                                <h3>YPF Servi compras</h3>
+                                <p>Atención al cliente, cajera, etc.</p>
+                                <p>Diciembre 2023-Acualmente</p>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <h3>Hospital Eukeria Ezeiza</h3>
+                                <p>Voluntaria en cuidado de pacientes</p>
+                                <p>Marzo 2023-Diciembre 2023</p>
+                            </li>
+                        </ul>
                     </article>
                 </div>
 
                 <div class="columna-derecha">
                     <article class="experiencia-contenido">
                         <h2>Formacion Academica</h2>
+                        <ul>
                             <li>
-                            <h3>Universidad Nacional de Lanús</h3>
-                            <p>Licenciatura en Diseño y Comunicación Visual</p>
-                            <p>Marzo 2021-En curso</p>
-                        
-                            <h3>Escuela de educación media n°2</h3>
-                            <p>Bachiller en Ciencias Social</p>
-                            <p>2012-2014 finalizado</p>
-                        </li>
+                                <h3>Universidad Nacional de Lanús</h3>
+                                <p>Licenciatura en Diseño y Comunicación Visual</p>
+                                <p>Marzo 2021-En curso</p>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <h3>Escuela de educación media n°2</h3>
+                                <p>Bachiller en Ciencias Social</p>
+                                <p>2012-2014 finalizado</p>
+                            </li>
+                        </ul>
                     </article>
                 </div>                                  
-        </section>
+            </section>
 
             <section id="habilidades">
                 <h2 class="seccion-habilidades">Habilidades</h2>
                 <div class="tarjetas">
                     <div class="caracteristicas">
                         <h3>Caracteristicas</h3>
-                        <li>Trabajo en equipo</li>
-                        <li>Responsabilidad</li>
-                        <li>Compromiso</li>
-                        <li>Buena capacidad de comunicación</li>
+                        <ul>
+                            <li>Trabajo en equipo</li>
+                            <li>Responsabilidad</li>
+                            <li>Compromiso</li>
+                            <li>Buena capacidad de comunicación</li>
+                        </ul>
                     </div>
 
                     <div class="informatico">
                         <h3>Conocimientos</h3>
-                        <li>Paquete Office</li>
-                        <li>Adobe Illustrator</li>
-                        <li>Adobe Photoshop</li>
-                        <li>Adobe InDesing</li>
+                        <ul>
+                            <li>Paquete Office</li>
+                            <li>Adobe Illustrator</li>
+                            <li>Adobe Photoshop</li>
+                            <li>Adobe InDesing</li>
+                        </ul>
                     </div>
                 </div>
             </section>
 
             <section id="contacto">
                 <h3 class="titulo-seccion">Contacta ahora</h3>
+                <p>* Campos Obligatorios</p>
                 <div class="contenedor-form">
-                    <form action="">
-                        <div class="fila-mitad">
-                            <input type="text" placeholder="Nombre Completo" class="input-mitad">
-                            <input type="text" placeholder="Dirección de Email" class="input-mitad">
-                        </div>
-                        <div class="fila">
-                            <input type="text" placeholder="Tema..." class="input-full">
-                        </div>
-                        <div class="fila">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full"></textarea>
-                        </div>
-                        <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                    <form method="post" action="mailto:melanyuns@gmail.com?subjet=Email enviado desde el formulario" target="_blank" enctype="text/plain">
+                        <label for="Nombre">* Nombre Completo:</label>
+                        <input type="text" name="Nombre" id="Nombre" placeholder="Ej: Juan Gonzalez" required>
+
+                        <label for="Email">* Email:</label>
+                        <input type="email" name="Email" id="Email" placeholder="Ej: Gonzalez18@gmail.com" required>
+
+                        <label for="Asunto">Asunto:</label>
+                        <input type="text" name="Asunto" id="Tema" maxlength="30" placeholder="Ej: Trabajo">
+
+                        <label for="Mensaje">Mensaje:</label>
+                        <textarea name="Mensaje" id="Mensaje" maxlength="600" placeholder="Escribe tu mensaje..."></textarea>
+
+                        <input type="reset" value="Borrar">
+                        <input type="submit" value="Enviar">
                     </form>
                 </div>
             </section>
