@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Melany Santillan</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/png" href="favicon.png"/>
+        <link href="estilos.css" rel="stylesheet" type="text/css"/>
+        
+    </head>
+
+    <body>
+        
+        <header class="header">
+            <a href="#" class="logo"><span>Melan</span>y</a>
+
+            <nav class="navbar">
+                <a href="index.html" >INICIO</a>
+                <a href="sobremi.html">SOBRE MI</a>
+                <a href="trabajos.html">TRABAJOS</a>
+                <a href="contacto.html">CONTACTO</a>
+            </nav>
+         </header>
+
+         <main>
+            <section id="contacto">
+                <h3 class="titulo-seccion">Contacta ahora</h3>
+                <p>* Campos Obligatorios</p>
+                <div class="contenedor-form">
+                    <form method="post" action="mailto:melanyuns@gmail.com?subjet=Email enviado desde el formulario" target="_blank" enctype="text/plain">
+                        <label for="Nombre">* Nombre Completo:</label>
+                        <input type="text" name="Nombre" id="Nombre" placeholder="Ej: Juan Gonzalez" required>
+
+                        <label for="Email">* Email:</label>
+                        <input type="email" name="Email" id="Email" placeholder="Ej: Gonzalez18@gmail.com" required>
+
+                        <label for="Asunto">Asunto:</label>
+                        <input type="text" name="Asunto" id="Tema" maxlength="30" placeholder="Ej: Trabajo">
+
+                        <label for="Mensaje">Mensaje:</label>
+                        <textarea name="Mensaje" id="Mensaje" maxlength="600" placeholder="Escribe tu mensaje..."></textarea>
+
+                        <input type="reset" value="Borrar">
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </section>
+         </main>
+        
+         <footer>
+            <p>Catedra Wischñevsky, Computación III - 2024</p>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </footer>
+
+    </body>
+</html>
