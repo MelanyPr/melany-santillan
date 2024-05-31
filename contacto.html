@@ -21,27 +21,33 @@
                 <a href="contacto.html">CONTACTO</a>
             </nav>
          </header>
-       
-        <main>
-            <section id="index.html">
-                <article class="inicio-contenido">
-                    <div class="titulo">
-                        <h1>PORTFOLIO</h1>
-                    </div>
-                    <div class="banda_medio">
-                        <h2>diseñadora grafica</h2>
-                        <h2>diseñadora grafica</h2>
-                        <h2>diseñadora grafica</h2>
-                    </div>
-                    <div class="nombre">
-                        <h3>MELANY</h3>
-                    </div>
-                </article>
+
+         <main>
+            <section id="contacto">
+                <h3 class="titulo-seccion">Contacta ahora</h3>
+                <p>* Campos Obligatorios</p>
+                <div class="contenedor-form">
+                    <form method="post" action="mailto:melanyuns@gmail.com?subjet=Email enviado desde el formulario" target="_blank" enctype="text/plain">
+                        <label for="Nombre">* Nombre Completo:</label>
+                        <input type="text" name="Nombre" id="Nombre" placeholder="Ej: Juan Gonzalez" required>
+
+                        <label for="Email">* Email:</label>
+                        <input type="email" name="Email" id="Email" placeholder="Ej: Gonzalez18@gmail.com" required>
+
+                        <label for="Asunto">Asunto:</label>
+                        <input type="text" name="Asunto" id="Tema" maxlength="30" placeholder="Ej: Trabajo">
+
+                        <label for="Mensaje">Mensaje:</label>
+                        <textarea name="Mensaje" id="Mensaje" maxlength="600" placeholder="Escribe tu mensaje..."></textarea>
+
+                        <input type="reset" value="Borrar">
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
             </section>
-           
-        </main>
+         </main>
         
-        <footer>
+         <footer>
             <p>Catedra Wischñevsky, Computación III - 2024</p>
             <div class="redes">
                 <a href="#"><i class="fa-brands fa-youtube"></i></a>
