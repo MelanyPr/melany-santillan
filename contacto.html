@@ -23,27 +23,37 @@
          </header>
 
          <main>
-            <section id="contacto">
-                <h3 class="titulo-seccion">Contacta ahora</h3>
-                <p>* Campos Obligatorios</p>
-                <div class="contenedor-form">
-                    <form method="post" action="mailto:melanyuns@gmail.com?subjet=Email enviado desde el formulario" target="_blank" enctype="text/plain">
-                        <label for="Nombre">* Nombre Completo:</label>
-                        <input type="text" name="Nombre" id="Nombre" placeholder="Ej: Juan Gonzalez" required>
-
-                        <label for="Email">* Email:</label>
-                        <input type="email" name="Email" id="Email" placeholder="Ej: Gonzalez18@gmail.com" required>
-
-                        <label for="Asunto">Asunto:</label>
-                        <input type="text" name="Asunto" id="Tema" maxlength="30" placeholder="Ej: Trabajo">
-
-                        <label for="Mensaje">Mensaje:</label>
-                        <textarea name="Mensaje" id="Mensaje" maxlength="600" placeholder="Escribe tu mensaje..."></textarea>
-
-                        <input type="reset" value="Borrar">
-                        <input type="submit" value="Enviar">
+            <section id="estructura_contacto">
+                <h1>Contacto</h1>
+                <article class="contacto">
+                    <form method="post" action="mailto:melanyuns@gmail.com?subject=Email enviado desde el formulario"
+                        target="_blank" enctype="text/plain">
+                        <div class="datos_contacto">
+                                <label for="Nombre y Apellido">Nombre y Apellido</label>
+                                <input type="text" name="Nombre y Apellido" id="Nombre" maxlength="30"
+                                    placeholder="Ej: Luna Sosa" required>
+    
+                                <label for="Grupo o Empresa">Grupo o Empresa</label>
+                                <input type="text" name="Grupo o Empresa" id="Empresa" maxlength="30"
+                                    placeholder="Ej: Sosa S.A" required>
+    
+                                <label for="Correo">Correo</label>
+                                <input type="email" name="Correo" id="Correo" placeholder="Ej: lunasosa@gmail.com" required>
+    
+                                <label for="Teléfono">Teléfono</label>
+                                <input type="tel" name="Teléfono" id="Telefono" placeholder="Ej: (011)00000000" required>
+                        </div>
+    
+                        <div class="mensaje_enviar">
+                            <label>Mensaje</label>
+                            <textarea name="Mensaje" id="Mensaje"
+                                placeholder="Ej: ¡Hola! Queremos trabajar con vos..."></textarea>
+    
+                            <input class="boton_enviar" type="submit" value="Enviar" formenctype="text/plain">
+                        </div>
                     </form>
-                </div>
+                </article>
+    
             </section>
          </main>
         
