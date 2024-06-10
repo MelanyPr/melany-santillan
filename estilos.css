@@ -212,58 +212,124 @@ span {
 
 /* trabajos */
 
-#habilidades {
-    width: 100%;
-    padding: 12% 8%;
-    justify-content: center;
-    background: rgb(241, 241, 241);
+#trabajos {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    cursor: default;
-}
-.seccion-habilidades {
-    font-family: "Museo-Moderno", "sans-serif";
-    text-align: left;
-    color: blueviolet;
-    font-size: 45px;
+    gap: 50px;
+    padding: 167px 118px;
+    background-color: #AD8CE0;
 }
 
-.tarjetas {
+.mis-trabajos {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    gap: 100px;
-}
-
-.caracteristicas, .informatico {
-    width: 400px;
-    font-family: "Roboto", "sans-serif";
-    background-color: rgb(228, 197, 228);
-    border-radius: 10px;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
-    padding: 48px;
-    
-}
-.caracteristicas h3, .informatico h3 {
     font-family: "Museo-Moderno", "sans-serif";
-    color: blueviolet;
-    font-size: 30px;
-    line-height: 50px;
-}
-.caracteristicas li, .informatico li {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 59px;
+    border-radius: 40px;
+    border: 2px solid black;
+    background-color: rgb(228, 197, 228);
 }
 
-.caracteristicas:hover {
-    box-shadow: 5px 5px 20px rgba(0,0,0,0,4);
-    transform: translateY(-3%);
+#trabajos h2 {
+    width: 300px;
+    display: flex;
+    padding: 10px 24px;
+    font-family: "Museo-Moderno", "sans-serif";
+    font-size: 29px;
+    border-radius: 40px;
+    border: 2px solid black;
+    background-color: rgb(228, 197, 228);
 }
 
-.informatico:hover {
-    box-shadow: 5px 5px 20px rgba(0,0,0,0,4);
-    transform: translateY(-3%);
+.galeria {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 480px 480px 480px;
+    width: 100%;
+    padding: 35px;
+    grid-gap: 45px 90px;
+    overflow: hidden;
+}
+
+.galeria img {
+    border-radius: 40px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 1s;
+}
+
+.galeria :hover img {
+    filter: blur(2px);
+    transform: rotate(2deg) scale(1.1);
+}
+
+.editorial {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lettering {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.infografia {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.light-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+
+.light-box img {
+    max-height: 70vh;
+}
+
+.light-box:target {
+    transform: scale(1);
+}
+
+.close {
+    display: block;
+    position: absolute;
+    top: 120px;
+    right: 80px;
+    font-size: 40px;
+    font-family: 'Museo-Moderno';
+    color: rgb(228, 197, 228);
+    background-color: black;
+    border-radius: 40px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.next {
+    display: block;
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    align-content: center;
 }
 
 /* contacto */
@@ -285,7 +351,7 @@ span {
     justify-content: center;
     font-size: 59px;
     border-radius: 40px;
-    border: 2px solid blueviolet;
+    border: 2px solid black;
     background-color: rgb(228, 197, 228);
 }
 
@@ -301,18 +367,14 @@ span {
 form {
     height: auto;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 40px;
 }
 
-.datos {
+.datos_contacto {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 60px;
+    flex-direction: column;
 }
 
 label {
@@ -359,6 +421,7 @@ textarea {
 .mensaje_enviar {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .boton_enviar {
