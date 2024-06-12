@@ -76,15 +76,15 @@ span {
 
 #index {
     width: 100%;
-    height: 986px;
+    height: 92vh;
     background: #AD8CE0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     font-family: "Museo-Moderno", "sans-serif";
 }
 
 .titulo h1 {
-    padding: 280px 120px 0px;
     font-size: 121px;
     font-weight: bold;
     animation-name: slide;
@@ -139,33 +139,38 @@ span {
 
 #presentacion {
     width: 100%;
-    height: 986px;
     padding: 167px 118px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     cursor: default;
     background-color: #C688BB;
     gap: 67px;
 }
 
-.titulo_texto {
-    padding: 40px;
-    border-radius: 40px;
-    border: 2px solid #000;
-    background-color: rgb(228, 197, 228);
-    box-shadow: 0px 9px 12px 0px rgba(0, 0, 0, 0.25);
-}
-
-
-.titulo_texto h1 {
-    padding-bottom: 15px;
+#presentacion h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     font-family: "Museo-Moderno", "sans-serif";
     font-size: 59px;
-    font-weight: 900;
+    border-radius: 40px;
+    border: 2px solid black;
+    background-color: rgb(228, 197, 228);
 }
 
-.titulo_texto p {
+.sobremi {
+    width: 100%;
+    padding: 60px 70px;
+    border-radius: 40px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(228, 197, 228);
+    gap: 167px;
+}
+
+.sobremi p {
     font-family: "Roboto", "sans-serif";
     font-size: 27px;
     line-height: 37px;
@@ -173,13 +178,28 @@ span {
 
 .imagen img {
     border-radius: 40px;
-    border: 2px solid #000;
     box-shadow: 0px 9px 12px 0px rgba(0, 0, 0, 0.25);
 }
 
 .imagen :hover {
     transition: 1s;
     transform:scale(1.1)
+}
+
+
+.conocimientos h2 {
+    width: 300px;
+    display: flex;
+    padding: 10px 24px;
+    font-family: "Museo-Moderno", "sans-serif";
+    font-size: 29px;
+    border-radius: 40px;
+    border: 2px solid black;
+    background-color: rgb(228, 197, 228);
+}
+
+.programas {
+    display: flex;
 }
 
 #experiencia {
