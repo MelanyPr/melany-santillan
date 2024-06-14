@@ -140,6 +140,9 @@ span {
 .titulo h1 {
     font-family: "Museo-Moderno", "sans-serif";
     font-size: 10.6rem;
+    animation: movimiento
+         2s linear infinite running alternate;
+
 }
 
 .titulo h2 {
@@ -151,6 +154,8 @@ span {
 .titulo h3 {
     font-family: "Museo-Moderno", "sans-serif";
     font-size: 10rem;
+    animation: movimiento
+         2s linear infinite running alternate;
 }
 
 .titulo h2:hover {
@@ -160,6 +165,15 @@ span {
     transform: scale(1.1);
 }
 
+@keyframes movimiento {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(20px);
+    }
+}
 
 /* sobre mi */
 
