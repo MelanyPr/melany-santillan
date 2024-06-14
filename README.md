@@ -1,4 +1,4 @@
-# TP1 Curriculum - Entrega Final
+# TP2 Portfolio - Entrega Final
 ## Realizado en html y css
 ## Tamaño de pantalla: 1366x768
 ## Editor de código: Visual Studio Code
@@ -12,5 +12,8 @@ En el html la seccion "contacto" no tiene hipervinculos que funcionen ya que no 
 Si bien el logo que tiene una sombra en la barra de navegación me gusta como quedo creo que deberia tener otro contraste de colores.
 
 En la seccion "habilidades" me gustaria que no sea tan sencillo pero me costo un poco seguir lo que tenia en mente y preferi quedarme con algo no tan complicado por los tiempos.
+
+---Quiero dejar esto para recordar todo lo que pude avanzar a lo largo de la cursada---
+En base a lo ya realizado me quede con la paleta de colores y decidi ir por algo sencillo 
 
 
