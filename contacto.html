@@ -12,57 +12,78 @@
 
     <body>
         
-        <header class="header">
-            <a href="index.html" class="logo"><span>Melan</span>y</a>
+        <header id="header">
+            <div class="contenido">
+                <a href="index.html" class="logo"><span>Melan</span>y</a>
+    
+                <nav class="navegador">
+                    <input type="checkbox" id="menu_check">
+                    <label id="menu" for="menu_check">
+                        <span id="menu_open"><img src="img/menu.svg" width="50px" height="40px"></span>
+                        <span id="menu_close"><img src="img/cerrar.svg" width="50px" height="45px"></span>
+                    </label>
+    
+                    <ul>
+                        <li><a href="sobremi.html">Sobre mí</a></li>
+                        <li><a href="trabajos.html">Trabajos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-            <nav class="navbar">
-                <a href="sobremi.html">SOBRE MI</a>
-                <a href="trabajos.html">TRABAJOS</a>
-                <a href="contacto.html">CONTACTO</a>
-            </nav>
-         </header>
+         <main class="contacto">
+            <div class="container">
+                <div class="box-info">
+                    <h1>Contactate conmigo...</h1>
+                    <address class="data">
+                        <p class="telefono">Teléfono:
+                            <a href="http://wa.me/+5491169576541" target="_blank">+54 11 6957 6541</a>
+                        </p>
+                        <p class="correo">Correo electrónico:
+                            <a href="mailto:melanyuns@gmail.com?Subject=Hola,%20me%20interesa%20tu%20perfil."
+                                target="_top">melanyuns@gmail.com</a>
+                        </p>
+                        <p>Dirección: Ciudad de Buenos Aires, Argentina</p>
+                    </address>
+                </div>
 
-         <main>
-            <section id="estructura_contacto">
-                <h1>Contacto</h1>
-                <article class="contacto">
-                    <form method="post" action="mailto:melanyuns@gmail.com?subject=Email enviado desde el formulario"
-                        target="_blank" enctype="text/plain">
-                        <div class="datos_contacto">
-                                <label for="Nombre y Apellido">Nombre y Apellido</label>
-                                <input type="text" name="Nombre y Apellido" id="Nombre" maxlength="30"
-                                    placeholder="Ej: Luna Sosa" required>
-    
-                                <label for="Grupo o Empresa">Grupo o Empresa</label>
-                                <input type="text" name="Grupo o Empresa" id="Empresa" maxlength="30"
-                                    placeholder="Ej: Sosa S.A" required>
-    
-                                <label for="Correo">Correo</label>
-                                <input type="email" name="Correo" id="Correo" placeholder="Ej: lunasosa@gmail.com" required>
-    
-                                <label for="Teléfono">Teléfono</label>
-                                <input type="tel" name="Teléfono" id="Telefono" placeholder="Ej: (011)00000000" required>
-                        </div>
-    
-                        <div class="mensaje_enviar">
-                            <label>Mensaje</label>
-                            <textarea name="Mensaje" id="Mensaje"
-                                placeholder="Ej: ¡Hola! Queremos trabajar con vos..."></textarea>
-    
-                            <input class="boton_enviar" type="submit" value="Enviar" formenctype="text/plain">
-                        </div>
-                    </form>
-                </article>
-    
-            </section>
-         </main>
+                <form method="post" action="mailto:melanyuns@gmail.com?subject=Email enviado desde el formulario" target="_blank" enctype="text/plain">
+                    <div class="input-box">
+                        <label for="Nombre y Apellido">Nombre y Apellido</label>
+                        <input type="text" name="Nombre y Apellido" id="Nombre" maxlength="30" placeholder="Ej: Luna Sosa" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="Correo">Correo</label>
+                        <input type="email" name="Correo" id="Correo" placeholder="Ej: lunasosa@gmail.com" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="Teléfono">Teléfono</label>
+                        <input type="tel" name="Teléfono" id="Telefono" placeholder="Ej: (011)00000000" required>
+                    </div>
+                    <div class="input-box">
+                        <textarea placeholder="Dejame tu mensaje..."></textarea>
+                    </div>
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </main>
         
-         <footer>
-            <p>Catedra Wischñevsky - Desarrollado por Melany Santillán</p>
-            <div class="redes">
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <footer>
+            <div id="contenedor_footer">
+                <div class="redes">
+                    <a href="https://www.instagram.com/melany.prs" target="_blank">
+                        <img class="logo_instagram" src="img/logoinsta.svg" width="30px" height="30px"
+                            alt="Logo instagram: Melany.prs" />
+                    </a>
+                    <a href="https://www.facebook.com/Meel.Pastillera/" target="_blank">
+                        <img class="logo_x" src="img/logofb.svg" width="30px" height="30px" alt="Logo Facebook: Meel Lpda" />
+                    </a>
+                </div>
+
+                <div>
+                    <p>@2024 Curriculum Vitae para Compu III // Santillan Melany Priscila.</p>
+                </div>
             </div>
         </footer>
 

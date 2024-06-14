@@ -27,17 +27,63 @@
     font-weight: normal;
 }
 
-.header {
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: blueviolet;
+    border-radius: 40px;
+}
+::-webkit-scrollbar-track {
+    background-color: rgb(0, 0, 0, 0.6);
+    width: 50px;
+}
+
+#header {
+    z-index: 2;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 120px;
     background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
+    width: 100%;
+    font-size: 0.9em;
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    padding: 25px 0px;
     display: flex;
-    justify-content:space-between;
+    flex-direction: row;
+}
+
+nav li {
+    padding: 0 30px;
+}
+
+.contenido {
+    padding: 0 160px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    height: 107px;
+}
+
+.navegador a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    font-family: "Museo-Moderno", "sans-serif";
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.navegador a:hover {
+    color: violet;
+    transition: 0.5s;
+}
+
+#menu,
+#menu_check {
+    display: none;
 }
 
 .logo {
@@ -59,161 +105,152 @@ span {
     color: blueviolet;
 }
 
-.navbar a {
+.nav a {
     font-family: "Museo-Moderno", "sans-serif";
     font-size: 18px;
     color: white;
     margin: 0px 20px;
 }
 
-.navbar a:hover,
-.navbar a.activado {
+.nav a:hover,
+.nav a.activado {
     color: violet;
     border-bottom: 3px solid violet;
 }
 
+
+
 /* index */
+#texto {
+    max-width: 510px;
+}
 
-#index {
+.bloque_info {
+    font-family: "Roboto", "sans-serif";
+    font-size: 1.5em;
+}
+
+#sobre_mi {
     width: 100%;
-    height: 92vh;
-    background: #AD8CE0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: "Museo-Moderno", "sans-serif";
-}
-
-.titulo h1 {
-    padding-left: 120px;
-    font-size: 121px;
-    font-weight: bold;
-    animation-name: slide;
-    animation-duration: 1s;
-    animation-iteration-count: 2;
-}
-      
-@keyframes slide {
-    0% {transform: translateX(0);}
-    50% {transform: translateX(20px);}
-    100% {transform: translateX(0);}
-}
-                  
-
-.banda_medio {
-    width: 100%;
-}
-
-.banda_medio :hover {
-    color: white;
-}
-
-.banda_medio h2 {
-    text-align: center;
-    font-size: 107px;
-    color: #8a2be2;
-}
-
-.nombre h3 {
-    text-align: end;
-    font-size: 81px;
-    padding: 0px 120px ;
-}
-
-.foto {
-    border-radius: 50%;
-    width: 550px;
-}
-
-::-webkit-scrollbar {
-    width: 15px;
-}
-::-webkit-scrollbar-thumb {
-    background-color: blueviolet;
-}
-::-webkit-scrollbar-track {
-    background-color: rgb(0, 0, 0, 0.6);
-    width: 50px;
-}
-
-/* sobre mi */
-
-.sobremi {
     background-color: #C688BB;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    cursor: default;
-    padding: 167px 118px;
-    gap: 70px;
+    align-items: center;
+    padding: 160px 0 0 0;
 }
 
-.titulo1 h1 {
-    display: flex;
-    justify-content: center;
+#sobre_mi h1 {
     font-family: "Museo-Moderno", "sans-serif";
     font-size: 59px;
-    border-radius: 40px;
-    border: 2px solid black;
-    background-color: rgb(228, 197, 228);
 }
 
-.info {
-    padding: 60px 70px;
-    border-radius: 40px;
-    border: 2px solid black;
+.presentacion {
+    padding: 30px 0 100px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(228, 197, 228);
-    gap: 167px;
+    gap: 40px;
+
+    p {
+        color: black;
+    }
 }
 
-.info p {
-    font-family: "Roboto", "sans-serif";
-    font-size: 27px;
-    line-height: 37px;
-}
-
-.imagen img {
+.presentacion img {
     border-radius: 40px;
     box-shadow: 0px 9px 12px 0px rgba(0, 0, 0, 0.25);
 }
 
-.imagen :hover {
+.presentacion img:hover {
+    transition: 1s;
+    transform:scale(1.1)
+}
+
+
+
+/* sobre mi */
+
+#texto {
+    max-width: 500px;
+}
+
+.bloque_info {
+    font-family: "Roboto", "sans-serif";
+    font-size: 1.5em;
+}
+
+#sobre_mi {
+    width: 100%;
+    background-color: #C688BB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 160px 0 0 0;
+    gap: 40px;
+}
+
+#sobre_mi h1 {
+    text-align: center;
+    width: 61%;
+    font-family: "Museo-Moderno", "sans-serif";
+    font-size: 59px;
+    border: 2px solid black;
+    border-radius: 40px;
+    background-color: rgb(228, 197, 228);
+}
+
+.presentacion {
+    padding: 50px 40px 100px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(228, 197, 228);
+    border-radius: 40px;
+    border: 2px solid black;
+    gap: 40px;
+}
+
+.presentacion img {
+    border-radius: 40px;
+    box-shadow: 0px 9px 12px 0px rgba(0, 0, 0, 0.25);
+}
+
+.presentacion img:hover {
     transition: 1s;
     transform:scale(1.1)
 }
 
 .conocimientos {
+    padding: 70px 0 100px 0;
     background-color: #AD8CE0;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    cursor: default;
-    padding: 167px 118px;
-    gap: 70px;
+    gap: 30px;
 }
 
 .conocimientos h2 {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    width: 63%;
     font-family: "Museo-Moderno", "sans-serif";
     font-size: 59px;
-    border-radius: 40px;
     border: 2px solid black;
+    border-radius: 40px;
     background-color: rgb(228, 197, 228);
 }
 
 .programas {
+    padding: 50px 0;
     display: flex;
-    padding: 60px 70px;
-    border-radius: 40px;
-    border: 2px solid black;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     background-color: rgb(228, 197, 228);
-    gap: 85px;
+    border: 2px solid black;
+    border-radius: 40px;
+    gap:15%
+
 }
 
 .programas img {
@@ -225,7 +262,9 @@ span {
     font-size: 27px;
 }
 
+
 .logos {
+    padding-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -237,33 +276,6 @@ span {
     transform:scale(1.1)
 }
 
-#experiencia {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12% 8%;
-    gap: 10em;
-    background: rgb(241, 241, 241);
-    cursor: default;
-}
-
-.experiencia-contenido h2 {
-    font-family: "Museo-Moderno", "sans-serif";
-    color: blueviolet;
-    line-height: 100px;
-    font-size: 45px;
-}
-.experiencia-contenido h3 {
-    font-family: "Roboto", "sans-serif";
-    color:blueviolet;
-    line-height: 2;
-    font-size: 27px;
-}
-.experiencia-contenido p {
-    font-family: "Roboto", "sans-serif";
-    line-height: 1.5;
-    font-size: 16px;
-}
 
 /* trabajos */
 
@@ -286,7 +298,7 @@ span {
 }
 
 #trabajos h2 {
-    width: 300px;
+    width: 340px;
     display: flex;
     padding: 10px 24px;
     font-family: "Museo-Moderno", "sans-serif";
@@ -331,12 +343,6 @@ span {
     gap: 20px;
 }
 
-.infografia {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
 .light-box {
     position: fixed;
     top: 0;
@@ -366,7 +372,7 @@ span {
     top: 120px;
     right: 80px;
     font-size: 40px;
-    font-family: 'Museo-Moderno';
+    font-family: "Museo-Moderno", "sans-serif";
     color: rgb(228, 197, 228);
     background-color: black;
     border-radius: 40px;
@@ -387,129 +393,346 @@ span {
     align-content: center;
 }
 
+.medios {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.medios-video {
+    display: flex;
+    justify-content: center;
+}
+
+.medios-video video {
+    border-radius: 40px;
+}
+
 /* contacto */
 
-#estructura_contacto {
-    width: 100%;
-    padding: 167px 264px;
-    font-family: "Museo-Moderno", "sans-serif";
-    background-color: #C688BB;
-    display: flex;
-    flex-direction: column;
+.contacto {
+    display:flex;
+    justify-content: center;
     align-items: center;
-    gap: 60px;
+    background: #C688BB;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.container {
+    height: 92vh;
+    display:grid;
+    align-items: center;
+    grid-template-columns: repeat(2,47%);
+    gap:75px;
+    width: 115vh;
 }
 
-#estructura_contacto h1 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-size: 59px;
+.box-info {
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+.box-info h1 {
+    text-align: left;
+    font-size: 49px;
+    font-family: "Museo-Moderno", "sans-serif";
+    background-color: rgb(228, 197, 228);
     border-radius: 40px;
     border: 2px solid black;
-    background-color: rgb(228, 197, 228);
+    padding: 30px;
 }
 
-.contacto {
-    width: 100%;
-    padding: 40px;
+.data {
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    background-color: rgb(228, 197, 228);
     border-radius: 40px;
-    border: 2px solid #000;
-    background-color: rgb(228, 197, 228);
-    box-shadow: 0px 9px 12px 0px rgba(0, 0, 0, 0.25);
+    border: 2px solid black;
+    padding: 25px;
 }
 
+.data p {
+    font-family: "Roboto", "sans-serif";
+    font-size: 1.3rem;
+}
+
+.data p i {
+    margin-right: 10px;
+    font-size:25px;
+}
+
+.data {
+    font-style: normal;
+}
+
+.correo a {
+    text-decoration: none;
+    color: black;
+}
+.correo a:hover {
+    color: #AD8CE0;
+}
+
+.correo a:active {
+    color: rgb(133, 26, 88);
+}
+
+.telefono {
+    padding-bottom: 20px;
+}
+
+.telefono a {
+    text-decoration: none;
+    color: black;
+}
+
+.telefono a:hover {
+    color: #AD8CE0;
+}
+
+.telefono a:active {
+    color: rgb(133, 26, 88);
+}
 form {
-    height: auto;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-
-.datos_contacto {
-    width: 100%;
-    display: flex;
+    display:flex;
     flex-direction: column;
-}
-
-label {
-    height: 30px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
-    font-family: "Roboto", "sans-serif";
-    font-size: 1.0em;
-    padding: 10px 24px;
-    margin: 5px 0 20px 0;
+    text-align: center;
+    gap:15px;
+    background-color: rgb(228, 197, 228);
     border-radius: 40px;
+    border: 2px solid black;
+    padding: 25px;
 }
 
-input[type="radio"] {
-    appearance: none;
-}
-
-input[type="radio"]+label::before {
-    content: "";
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: white;
-    display: inline-flex;
-}
-
-input[type="radio"]:checked+label::before {
-    background-color: rgb(133, 26, 88);
-}
-
-textarea {
-    font-family: "Roboto", "sans-serif";
-    font-size: 1.0em;
-    width: 745px;
-    height: 185px;
-    padding: 10px 24px;
-    margin: 8px 0 30px 0;
-    border-radius: 40px;
-}
-
-.mensaje_enviar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.boton_enviar {
+.input-box label {
     font-family: "Museo-Moderno", "sans-serif";
-    font-size: 1.0em;
-    height: 50px;
-    background-color: violet;
+    display: flex;
+    padding: 0 10px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline:none;
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    transition:.3s;
+    border-radius: 40px;
+    
+}
+
+.input-box input::placeholder,
+.input-box textarea::placeholder {
+    color:#a3a3a3;
+    
+}
+
+.input-box input:focus::placeholder,
+.input-box textarea:focus::placeholder {
+    color:transparent;
+}
+
+.input-box input:focus,
+.input-box textarea:focus {
+    border-bottom:3px solid rgb(228, 197, 228);
+    animation: shake .2s;
+}
+
+.input-box textarea {
+    width: 100%;
+    height: 130px;
+    padding: 15px;
+    border:3px solid transparent;
+    outline: none;
+    transition:.3s;
+    letter-spacing: 1.5px;
     border-radius: 40px;
 }
+
+
+.input-box  i {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color:rgba(255 255 255 / .3);
+    transition: .3s;
+}
+
+.input-box input:focus i {
+    color:rgb(228, 197, 228);
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border:none;
+    transition: .1s;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 40px;
+    font-family: "Museo-Moderno", "sans-serif";
+}
+
+form button:hover,
+.links a:hover {
+    background: #AD8CE0;
+}
+
+@keyframes shake { 
+    0%, 100% {transform: translateX(0);} 
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
+    20%, 40%, 60%, 80% {transform: translateX(10px);} 
+ }
 
 
 /* footer */
 
 footer {
-    background: rgba(0, 0, 0, 0.877);
-    color: #fff;
-    text-align: center;
-    padding: 14px 0px 7px 0px;
-    cursor: default;
-}
-footer {
+    background-color: black;
+    color: white;
+    font-family: "Museo-Moderno", "sans-serif";
     text-decoration: none;
-    color: #fff;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#contenedor_footer {
+    font-size: 1.1em;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-family: "Museo-Moderno", "sans-serif";
-    font-size: 20px;
+    gap: 70px;
 }
-footer .redes a {
-    color: violet;
-    line-height: 42px;
-    margin: 40px;
+
+.redes {
+    display: flex;
+    gap: 60px;
+}
+
+/*------responsive------*/
+
+@media screen and (max-width: 600px) {
+    /*------navegador------*/
+
+    #header {
+        font-size: 1.2em;
+    }
+
+    nav ul {
+        width: 100%;
+        height: calc(100% - 120px);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: violet;
+        position: fixed;
+        left: 0;
+        top: 70px;
+        gap: 15px;
+        overflow-y: auto;
+    }
+
+    nav li {
+        padding: 20px 0;
+    }
+
+    .contenido {
+        padding: 0 16px;
+        display: flex;
+        height: 80px;
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .navegador label img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #menu_check:not(:checked)~ul {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        right: 16px;
+        top: 25px;
+    }
+
+    #menu_close {
+        display: none;
+    }
+
+    #menu_check:checked~label #menu_open {
+        display: none;
+    }
+
+    #menu_check:checked~label #menu_close {
+        display: block;
+    }
    
+    /*------sobre mi ------*/
+
+    #sobre_mi {
+        li {
+            font-size: 1.2em;
+        }
+    }
+
+    #sobre_mi h1 {
+        width: 96%;
+    }
+
+    .presentacion {
+        padding-bottom: 70px;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 488px;
+            height: 448px;
+        }
+    }
+
+    #texto {
+        max-width: 500px;
+        padding: 0 16px;
+    }
+
+    .conocimientos h2 {
+        width: 96%;
+    }
+
+    .programas {
+        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /*------Footer------*/
+
+    footer {
+        padding: 0 16px;
+    }
+
+    #contenedor_footer {
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
 }

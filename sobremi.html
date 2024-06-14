@@ -12,29 +12,33 @@
 
     <body>
         
-        <header class="header">
-            <a href="index.html" class="logo"><span>Melan</span>y</a>
+        <header id="header">
+            <div class="contenido">
+                <a href="index.html" class="logo"><span>Melan</span>y</a>
+    
+                <nav class="navegador">
+                    <input type="checkbox" id="menu_check">
+                    <label id="menu" for="menu_check">
+                        <span id="menu_open"><img src="img/menu.svg" width="50px" height="40px"></span>
+                        <span id="menu_close"><img src="img/cerrar.svg" width="50px" height="45px"></span>
+                    </label>
+    
+                    <ul>
+                        <li><a href="sobremi.html">Sobre mí</a></li>
+                        <li><a href="trabajos.html">Trabajos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-            <nav class="navbar">
-                <a href="sobremi.html">SOBRE MI</a>
-                <a href="trabajos.html">TRABAJOS</a>
-                <a href="contacto.html">CONTACTO</a>
-            </nav>
-         </header>
-
-         <main id="presentacion">
-            <section class="sobremi">
-                    <div class="titulo1">
-                        <h1>Sobre mi...</h1>
-                    </div>
-                    <div class="info">
-                        <div class="imagen">
-                            <img src="img/imagen-cv2.jpg" alt="una foto de mi" width="548px" height="508px">
-                        </div>
-                        <div class="texto">
-                            <p>Mi nombre es Melany Santillan nací el 12 de Abril de 1997, vivo en Buenos Aires, Argentina. Actualmente soy estudiante de la Licenciatura en Diseño y Comunicación Visual en UNLa (Universidad Nacional de Lanús). La realidad es que simpre me gusto aprender cosas nuevas, soy muy creativa, me gusta experimentar en manualidades pero nunca se me ocurrio estudiar diseño hasta el año 2021 que gracias a unos videos descubri esta maravillosa carrera que hoy la transito con mucho entusiamos. Y ahora que sabes un poco más de mi te invito a que observes mis trabajos, y si conectas con lo que estas buscando no dudes en comunicarte conmigo!</p>
-                        </div>
-                    </div>
+        <main id="sobre_mi">
+            <h1>Sobre mí...</h1>
+            <section class="presentacion">
+                <img src="img/imagen-cv2.jpg" alt="una foto de mi" width="548px" height="508px">
+                <article class="bloque_info" id="texto">
+                    <p>Mi nombre es Melany Santillan nací el 12 de Abril de 1997, vivo en Buenos Aires, Argentina. Actualmente soy estudiante de la Licenciatura en Diseño y Comunicación Visual en UNLa (Universidad Nacional de Lanús). La realidad es que simpre me gusto aprender cosas nuevas, soy muy creativa, me gusta experimentar en manualidades pero nunca se me ocurrio estudiar diseño hasta el año 2021 que gracias a unos videos descubri esta maravillosa carrera que hoy la transito con mucho entusiamos. Y ahora que sabes un poco más de mi te invito a que observes mis trabajos, y si conectas con lo que estas buscando no dudes en comunicarte conmigo!</p>
+                </article>
             </section>
 
             <section class="conocimientos">
@@ -61,19 +65,25 @@
                             <h3>Canva</h3>
                         </div>
                     </div>
-                </article>
-
-                
             </section>
 
          </main>
 
          <footer>
-            <p>Catedra Wischñevsky - Desarrollado por Melany Santillán</p>
-            <div class="redes">
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <div id="contenedor_footer">
+                <div class="redes">
+                    <a href="https://www.instagram.com/melany.prs" target="_blank">
+                        <img class="logo_instagram" src="img/logoinsta.svg" width="30px" height="30px"
+                            alt="Logo instagram: Melany.prs" />
+                    </a>
+                    <a href="https://www.facebook.com/Meel.Pastillera/" target="_blank">
+                        <img class="logo_x" src="img/logofb.svg" width="30px" height="30px" alt="Logo Facebook: Meel Lpda" />
+                    </a>
+                </div>
+
+                <div>
+                    <p>@2024 Curriculum Vitae para Compu III // Santillan Melany Priscila.</p>
+                </div>
             </div>
         </footer>
 

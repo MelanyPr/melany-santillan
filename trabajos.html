@@ -12,16 +12,25 @@
 
     <body>
         
-        <header class="header">
-            <a href="index.html" class="logo"><span>Melan</span>y</a>
-
-            <nav class="navbar">
-
-                <a href="sobremi.html">SOBRE MI</a>
-                <a href="trabajos.html">TRABAJOS</a>
-                <a href="contacto.html">CONTACTO</a>
-            </nav>
-         </header>
+        <header id="header">
+            <div class="contenido">
+                <a href="index.html" class="logo"><span>Melan</span>y</a>
+    
+                <nav class="navegador">
+                    <input type="checkbox" id="menu_check">
+                    <label id="menu" for="menu_check">
+                        <span id="menu_open"><img src="img/menu.svg" width="50px" height="40px"></span>
+                        <span id="menu_close"><img src="img/cerrar.svg" width="50px" height="45px"></span>
+                    </label>
+    
+                    <ul>
+                        <li><a href="sobremi.html">Sobre mí</a></li>
+                        <li><a href="trabajos.html">Trabajos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
          <main>
             <section id="trabajos">
@@ -74,20 +83,16 @@
                         </a>
                     </div>
                 </article>
-                <article class="infografia">
-                    <h2>infografia</h2>
-                    <div class="galeria">
-                        <a href="#infografia1">
-                            <img src="img/infografia1.jpg" width="2704px" height="2304px" alt="infografia"> 
-                        </a>
-                        <a href="#infografia2"> 
-                            <img src="img/infografia2.png" width="3734px" height="3000px" alt="infografia"> 
-                        </a>
-                        <a href="#infografia3">
-                            <img src="img/infografia3.jpg" width="1278px" height="1441px" alt="infografia">
-                        </a>
-                </article>
 
+                <article class="medios">
+                    <h2>Medios Expresivos</h2>
+                    <div class="medios-video">
+                            <video src="img/videomedios.mp4" controls autoplay loop width="960px" height="544px">
+
+                            </video>
+                    </div>
+
+                <!-- Galeria -->
                 <article class="light-box" id="editorial1">
                     <a href="#editorial6" class="next">
                         <img src="img/flachaizquierda.svg" width="30px" height="30px">
@@ -155,15 +160,91 @@
                 </article>
 
 
+                <article class="light-box" id="lettering1">
+                    <a href="#gif" class="next">
+                        <img src="img/flachaizquierda.svg" width="30px" height="30px">
+                    </a>
+                    <img src="img/lettering.jpg" alt="">
+                    <a href="#lettering2" class="next">
+                        <img src="img/flachaderecha.svg" width="30px" height="30px">
+                    </a>
+                    <a href="#" class="close">X</a>
+                </article>
+
+                <article class="light-box" id="lettering2">
+                    <a href="#lettering1" class="next">
+                        <img src="img/flachaizquierda.svg" width="30px" height="30px">
+                    </a>
+                    <img src="img/lettering2.jpg" alt="">
+                    <a href="#lettering3" class="next">
+                        <img src="img/flachaderecha.svg" width="30px" height="30px">
+                    </a>
+                    <a href="#" class="close">X</a>
+                </article>
+
+                <article class="light-box" id="lettering3">
+                    <a href="#lettering2" class="next">
+                        <img src="img/flachaizquierda.svg" width="30px" height="30px">
+                    </a>
+                    <img src="img/lettering3.jpg" alt="">
+                    <a href="#lettering4" class="next">
+                        <img src="img/flachaderecha.svg" width="30px" height="30px">
+                    </a>
+                    <a href="#" class="close">X</a>
+                </article>
+
+                <article class="light-box" id="lettering4">
+                    <a href="#lettering3" class="next">
+                        <img src="img/flachaizquierda.svg" width="30px" height="30px">
+                    </a>
+                    <img src="img/lettering4.jpg" alt="">
+                    <a href="#lettering5" class="next">
+                        <img src="img/flachaderecha.svg" width="30px" height="30px">
+                    </a>
+                    <a href="#" class="close">X</a>
+                </article>
+
+                <article class="light-box" id="lettering5">
+                    <a href="#lettering4" class="next">
+                        <img src="img/flachaizquierda.svg" width="30px" height="30px">
+                    </a>
+                    <img src="img/lettering5.jpg" alt="">
+                    <a href="#gif" class="next">
+                        <img src="img/flachaderecha.svg" width="30px" height="30px">
+                    </a>
+                    <a href="#" class="close">X</a>
+                </article>
+
+                <article class="light-box" id="gif">
+                    <a href="#lettering5" class="next">
+                        <img src="img/flachaizquierda.svg" width="30px" height="30px">
+                    </a>
+                    <img src="img/cristales.gif" alt="">
+                    <a href="#lettering1" class="next">
+                        <img src="img/flachaderecha.svg" width="30px" height="30px">
+                    </a>
+                    <a href="#" class="close">X</a>
+                </article>
+                <!-- Galeria -->
+
             </section>
          </main>
 
          <footer>
-            <p>Catedra Wischñevsky - Desarrollado por Melany Santillán</p>
-            <div class="redes">
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <div id="contenedor_footer">
+                <div class="redes">
+                    <a href="https://www.instagram.com/melany.prs" target="_blank">
+                        <img class="logo_instagram" src="img/logoinsta.svg" width="30px" height="30px"
+                            alt="Logo instagram: Melany.prs" />
+                    </a>
+                    <a href="https://www.facebook.com/Meel.Pastillera/" target="_blank">
+                        <img class="logo_x" src="img/logofb.svg" width="30px" height="30px" alt="Logo Facebook: Meel Lpda" />
+                    </a>
+                </div>
+
+                <div>
+                    <p>@2024 Curriculum Vitae para Compu III // Santillan Melany Priscila.</p>
+                </div>
             </div>
         </footer>
 
